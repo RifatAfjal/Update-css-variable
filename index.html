@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update css variable</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- external css file -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <section class="container">
+        <!-- header -->
+        <div class="header">
+            <h1>UPDATE CSS <span class="heading-color">VARIABLE</span></h1>
+            <div class="underline"></div>
+        </div>
+        
+        <!-- all controls -->
+        <div class="controls">
+            <!-- control -->
+            <div class="control">
+                <label for="spacing">SPACE:</label>
+                <input type="range" name="spacing" min="10" max="50" value="5" data-sizing="px"> 
+            </div>
+
+            <!-- control -->
+            <div class="control">
+                <label for="blur">BLUR:</label>
+                <input type="range" name="blur" min="0" max="5" value="0" data-sizing="px">
+            </div>
+
+            <!-- control -->
+            <div class="control">
+                <label for="base">COLOR:</label>
+                <input type="color" name="base" value="#191971">
+            </div>
+        </div>
+
+        <!-- image part -->
+        <div class="adnan-image">
+            <img src="./IMAGE/ADNAN.png" alt="man">
+        </div>
+    </section>
+
+    <!-- external javaScript file -->
+    <script src="./JS/dom.js"></script>
+</body>
+</html>

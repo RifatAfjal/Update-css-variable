@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --base: #191971;
+    --spacing: 10px;
+    --blur: 0px;
+    --radius: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    margin: 50px 5% 0;
+    max-width: 1170px;
+}
+
+.header h1 {
+    color: rgb(255, 102, 0);
+    font-size: 30px;
+    text-align: center;
+}
+
+.heading-color {
+    color: var(--base);
+}
+
+.underline {
+    width: 100px;
+    height: 5px;
+    border-radius: 50px;
+    margin: 0 auto;
+    background-color: midnightblue;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.control:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.adnan-image {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.adnan-image img {
+    width: 100%;
+    padding: var(--spacing);
+    background-color: var(--base);
+    border-radius: var(--radius);
+    filter: blur(var(--blur));
+}
+
+
+@media screen and (min-width: 600px){
+    .container {
+        margin: 50px auto;
+        max-width: 1170px;
+    }
+
+    .header h1 {
+        font-size: 50px;
+    }
+
+    .controls {
+        flex-direction: row;
+    }
+
+    .control:not(:last-child) {
+        margin: 0 20px 0 0;
+    }
+
+    .adnan-image {
+        width: 50%;
+    }
+}
+
